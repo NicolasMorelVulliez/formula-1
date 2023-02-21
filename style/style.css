@@ -89,18 +89,48 @@ p{
     
 }
 
-/* ESTILO HTML CALENDARIO */
-li{
-    list-style: none;
-}
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-  }
-.first-day {
-    grid-column-start: 3;
-  }
+/* ESTILO HTML EQUIPOS */
 
-.weekday{
-    background-color:grey ;
+.containerEquipos{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.sectionEquipos{
+    padding: 10px;
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    margin: 15px;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+}
+
+/*ANIMACION HTML EQUIPOS*/
+
+.img-area{
+    position: relative;
+    /*
+    height: 400px;
+    width: 600px; */
+    
+
+}
+ .img-area img{
+    position: absolute;
+    left: 0;
+    /*
+    height: 400px;
+    width: 600px;
+    */
+    transition: opacity 1s ease-in-out;
+ }
+
+ .img-area img.img-front:hover{
+    opacity: 0;
+    cursor: pointer;
+
+ }
+
+
+
