@@ -1,102 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
+
 /* COMIENZO Personalizacion NAVBAR */
-.colorNav{
+.colorNav {
     background-color: red;
     border-bottom: 5px solid black;
-    
-   
+
+
 }
-.fotoLogo{
+
+.fotoLogo {
     width: 250px;
     height: 100px;
 }
-.nav-link{
+
+.nav-link {
     color: white;
     font-size: 25px;
 
 }
+
 /*FINALIZACION PERSONALIZACION NAVBAR */
 
-p{
-    font-size: large ;
+p {
+    font-size: large;
 }
 
 
 
 /* HTML HISTORIA */
-.gridHistoria{
+.gridHistoria {
     display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-template-rows: auto auto ;
+    grid-template-rows: auto auto;
     gap: 15px;
-    grid-template-areas: 
-    " parrafoUno    imagenUno"
-    " imagenDos     parrafoDos"
-    " parrafoTres   imagenTres "
-    " imagenCuatro  parrafoCuatro";
+    grid-template-areas:
+        " parrafoUno    imagenUno"
+        " imagenDos     parrafoDos"
+        " parrafoTres   imagenTres "
+        " imagenCuatro  parrafoCuatro";
 }
 
-.parrafoUno{
+.parrafoUno {
     font-size: larger;
     grid-area: parrafoUno;
 }
-.imagenUno{
+
+.imagenUno {
     grid-area: imagenUno;
 }
-.imagenDos{
+
+.imagenDos {
     grid-area: imagenDos;
 }
-.parrafoDos{
-    font-size:larger;
+
+.parrafoDos {
+    font-size: larger;
     grid-area: parrafoDos;
 }
 
-.parrafoTres{
+.parrafoTres {
     font-size: larger;
     grid-area: parrafoTres;
 }
-.imagenTres{
+
+.imagenTres {
     grid-area: imagenTres;
 }
-.parrafoCuatro{
+
+.parrafoCuatro {
     font-size: larger;
     grid-area: parrafoCuatro;
 }
-.imagenCuatro{
+
+.imagenCuatro {
     grid-area: imagenCuatro;
 }
+
 /*ESTILO MOBILE DE HTML HISTORIA */
 @media screen and (max-width:768px) {
-    .gridHistoria{
+    .gridHistoria {
         display: grid;
         grid-template-columns: 3fr;
         grid-template-rows: auto;
         grid-template-areas:
-        "parrafoUno"
-        "imagenUno"
-        "parrafoDos"
-        "imagenDos"
-        "parrafoTres"
-        "imagenTres"
-        "parrafoCuatro"
-        "imagenCuatro";
+            "parrafoUno"
+            "imagenUno"
+            "parrafoDos"
+            "imagenDos"
+            "parrafoTres"
+            "imagenTres"
+            "parrafoCuatro"
+            "imagenCuatro";
     }
-    
+
 }
 
 /* ESTILO HTML EQUIPOS */
-
 .containerEquipos{
     display: flex;
     flex-wrap: wrap;
 }
-
-.sectionEquipos{
+.sectionEquipos {
     padding: 10px;
     border-radius: 15px;
     height: 400px;
@@ -108,29 +118,133 @@ p{
 
 /*ANIMACION HTML EQUIPOS*/
 
-.img-area{
+.img-area {
     position: relative;
-    /*
-    height: 400px;
-    width: 600px; */
-    
+
 
 }
- .img-area img{
-    position: absolute;
-    left: 0;
-    /*
-    height: 400px;
-    width: 600px;
-    */
-    transition: opacity 1s ease-in-out;
- }
 
- .img-area img.img-front:hover{
+.img-area img {
+    position: absolute;
+
+
+    transition: opacity 1s ease-in-out;
+}
+
+.img-area img.img-front:hover {
     opacity: 0;
     cursor: pointer;
 
- }
+}
+
+
+/*ESTILO HTML PILOTOS */ 
+.tituloPiloto{
+    display: block;
+    width: 600px;
+    font-size: 30px;
+}
+.nombrePiloto{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.pilotoFoto{
+    display: block;
+}
+
+.pilotos{
+    width: 200px;
+    height: 200px;
+}
+.flexPilotos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+
+    padding: 10px;
+    margin: 10px;
+}
+.equipos{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
 
 
+/*GRID PILOTOS */
+.gridPilotos {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    grid-template-areas:
+        " equipoUno      equipoDos"
+        " equipoTres     equipoCuatro"
+        " equipoCinco    equipoSeis"
+        " equipoSiete    equipoOcho"
+        " equipoNueve    equipoDiez";
+
+}
+
+.equipoUno {
+    grid-area: equipoUno;
+
+}
+
+.equipoDos {
+    grid-area: equipoDos;
+
+}
+
+.equipoTres {
+    grid-area: equipoTres;
+
+}
+
+.equipoCuatro {
+    grid-area: equipoCuatro;
+
+}
+
+.equipoCinco {
+    grid-area: equipoCinco;
+
+}
+
+.equipoSeis {
+    grid-area: equipoSeis;
+
+}
+
+.equipoSiete {
+    grid-area: equipoSiete;
+
+}
+
+.equipoOcho {
+    grid-area: equipoOcho;
+
+}
+
+.equipoNueve {
+    grid-area: equipoNueve;
+
+}
+
+.equipoDiez {
+    grid-area: equipoDiez;
+
+}
