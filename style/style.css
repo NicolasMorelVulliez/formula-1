@@ -102,10 +102,11 @@ p {
 }
 
 /* ESTILO HTML EQUIPOS */
-.containerEquipos{
+.containerEquipos {
     display: flex;
     flex-wrap: wrap;
 }
+
 .sectionEquipos {
     padding: 10px;
     border-radius: 15px;
@@ -138,13 +139,14 @@ p {
 }
 
 
-/*ESTILO HTML PILOTOS */ 
-.tituloPiloto{
+/*ESTILO HTML PILOTOS */
+.tituloPiloto {
     display: block;
     width: 600px;
     font-size: 30px;
 }
-.nombrePiloto{
+
+.nombrePiloto {
     display: block;
     font-size: 1.17em;
     margin-block-start: 1em;
@@ -153,15 +155,17 @@ p {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-.pilotoFoto{
+
+.pilotoFoto {
     display: block;
 }
 
-.pilotos{
+.pilotos {
     width: 200px;
     height: 200px;
 }
-.flexPilotos{
+
+.flexPilotos {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -174,7 +178,8 @@ p {
     padding: 10px;
     margin: 10px;
 }
-.equipos{
+
+.equipos {
     width: 500px;
     height: 500px;
     display: flex;
@@ -185,19 +190,8 @@ p {
 
 
 /*GRID PILOTOS */
-.gridPilotos {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr ;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    grid-template-areas:
-        " equipoUno      equipoDos      equipoTres  "
-        " equipoCuatro   equipoCinco    equipoSeis"
-        " equipoSiete    equipoOcho     equipoNueve"
-        " equipoDiez     auto           auto"
-        ;
 
-}
+
 
 .equipoUno {
     grid-area: equipoUno;
@@ -248,23 +242,39 @@ p {
     grid-area: equipoDiez;
 
 }
+
 /*MEDIA HTML PILOTOS*/
-@media screen and (max-width:768px) {
+
+.gridPilotos {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "equipoUno"
+        "equipoDos"
+        "equipoTres"
+        "equipoCuatro"
+        "equipoCinco"
+        "equipoSeis"
+        "equipoSiete"
+        "equipoOcho"
+        "equipoNueve"
+        "equipoDiez";
+}
+
+@media screen and (min-width:768px) {
+    
     .gridPilotos {
         display: grid;
-        grid-template-columns: 3fr;
-        grid-template-rows: auto;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
         grid-template-areas:
-            "equipoUno"
-            "equipoDos"
-            "equipoTres"
-            "equipoCuatro"
-            "equipoCinco"
-            "equipoSeis"
-            "equipoSiete"
-            "equipoOcho"
-            "equipoNueve"
-            "equipoDiez";
-    }
+            " equipoUno      equipoDos      equipoTres  "
+            " equipoCuatro   equipoCinco    equipoSeis"
+            " equipoSiete    equipoOcho     equipoNueve"
+            " equipoDiez     auto           auto"
+        ;
 
+    }
 }
