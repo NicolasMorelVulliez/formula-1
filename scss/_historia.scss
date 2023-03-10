@@ -1,0 +1,67 @@
+//GRID
+.gridHistoria {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    grid-template-areas:
+        " parrafoUno    imagenUno"
+        " imagenDos     parrafoDos"
+        " parrafoTres   imagenTres "
+        " imagenCuatro  parrafoCuatro";
+}
+
+.parrafoUno {
+    font-size: larger;
+    grid-area: parrafoUno;
+}
+
+.imagenUno {
+    grid-area: imagenUno;
+}
+
+.imagenDos {
+    grid-area: imagenDos;
+}
+
+.parrafoDos {
+    font-size: larger;
+    grid-area: parrafoDos;
+}
+
+.parrafoTres {
+    font-size: larger;
+    grid-area: parrafoTres;
+}
+
+.imagenTres {
+    grid-area: imagenTres;
+}
+
+.parrafoCuatro {
+    font-size: larger;
+    grid-area: parrafoCuatro;
+}
+
+.imagenCuatro {
+    grid-area: imagenCuatro;
+}
+
+//MOBILE FIRST
+@media screen and (max-width:768px) {
+    .gridHistoria {
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "parrafoUno"
+            "imagenUno"
+            "parrafoDos"
+            "imagenDos"
+            "parrafoTres"
+            "imagenTres"
+            "parrafoCuatro"
+            "imagenCuatro";
+    }
+
+}

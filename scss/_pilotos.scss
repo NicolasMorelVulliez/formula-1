@@ -1,0 +1,145 @@
+//PILOTOS
+/*PILOTOS*/
+div {
+    .tituloPiloto {
+        display: block;
+        width: 600px;
+        font-size: 30px;
+    }
+}
+
+article {
+    .nombrePiloto {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+}
+
+figure {
+    .pilotos {
+        width: 200px;
+        height: 200px;
+    }
+}
+@mixin flex($flex, $align,$justify,$wrap,$row){
+    display:$flex;
+    align-content: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    flex-direction: $row;
+}
+
+//MIXIN Pilotos
+.flexPilotos{
+    @include flex(flex, center, center, wrap, row );
+    border-top: 8px solid black;
+    border-right: 8px solid black;
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+.equios{
+    width: 500px;
+    height: 500px;
+    @include flex( flex, center, center, wrap, row );
+
+}
+//GRID PILOTOS//
+/*GRID PILOTOS */
+/*GRID PILOTOS */
+
+
+
+.equipoUno {
+    grid-area: equipoUno;
+
+}
+
+.equipoDos {
+    grid-area: equipoDos;
+
+}
+
+.equipoTres {
+    grid-area: equipoTres;
+
+}
+
+.equipoCuatro {
+    grid-area: equipoCuatro;
+
+}
+
+.equipoCinco {
+    grid-area: equipoCinco;
+
+}
+
+.equipoSeis {
+    grid-area: equipoSeis;
+
+}
+
+.equipoSiete {
+    grid-area: equipoSiete;
+
+}
+
+.equipoOcho {
+    grid-area: equipoOcho;
+
+}
+
+.equipoNueve {
+    grid-area: equipoNueve;
+
+}
+
+.equipoDiez {
+    grid-area: equipoDiez;
+
+}
+
+/*MEDIA HTML PILOTOS*/
+
+.gridPilotos {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "equipoUno"
+        "equipoDos"
+        "equipoTres"
+        "equipoCuatro"
+        "equipoCinco"
+        "equipoSeis"
+        "equipoSiete"
+        "equipoOcho"
+        "equipoNueve"
+        "equipoDiez";
+}
+
+@media screen and (min-width:768px) {
+    
+    .gridPilotos {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        grid-template-areas:
+            " equipoUno      equipoDos      equipoTres  "
+            " equipoCuatro   equipoCinco    equipoSeis"
+            " equipoSiete    equipoOcho     equipoNueve"
+            " equipoDiez     auto           auto"
+        ;
+
+    }
+}

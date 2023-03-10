@@ -1,0 +1,34 @@
+//equipos
+.containerEquipos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionEquipos {
+    padding: 10px;
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    margin: 15px;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+}
+//ANIMACION EQUIPOS
+/*ANIMACION EQUIPOS*/
+.img-area {
+    position: relative;
+    img{
+        position: absolute;
+        transition: opacity 1s ease-in-out;
+    }
+    img.img-front:hover {
+        opacity: 0;
+        cursor: pointer;
+    }
+
+
+
+}
+
+
+
