@@ -1,5 +1,8 @@
 //PILOTOS
 /*PILOTOS*/
+p {
+    font-size: large;
+}
 div {
     .tituloPiloto {
         display: block;
@@ -47,14 +50,50 @@ figure {
     margin: 10px;
 }
 .equios{
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     @include flex( flex, center, center, wrap, row );
 
 }
+
+
+//MIXIN GRID
+@mixin grid($columnas, $espacio){
+    display: grid;
+    grid-template-columns:repeat($columnas,1fr) ;
+    gap: $espacio;
+    
+    @media screen and (max-width:1280px) {
+        grid-template-columns: 2fr 1fr ;
+        gap: 0em;
+    }
+
+    @media screen and (max-width:900px) {
+        grid-template-columns: 2fr ;
+        gap: 0em;
+
+        .pilotos {
+            width: 150px;
+            height: 150px;
+        }
+        .flexPilotos{
+            width: 390px;
+            height: 300px;
+
+        }
+
+    }
+}
+.gridPilotos{
+    @include grid(3,1em )
+
+}
+
+
+
 //GRID PILOTOS//
 /*GRID PILOTOS */
-/*GRID PILOTOS */
+/*GRID PILOTOS 
 
 
 
@@ -108,7 +147,7 @@ figure {
 
 }
 
-/*MEDIA HTML PILOTOS*/
+/*MEDIA HTML PILOTOS
 
 .gridPilotos {
     display: grid;
@@ -143,3 +182,4 @@ figure {
 
     }
 }
+*/

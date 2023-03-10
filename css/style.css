@@ -104,6 +104,10 @@ footer .fotoLogo {
 }
 
 /*PILOTOS*/
+p {
+  font-size: large;
+}
+
 div .tituloPiloto {
   display: block;
   width: 600px;
@@ -141,8 +145,8 @@ figure .pilotos {
 }
 
 .equios {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -150,64 +154,122 @@ figure .pilotos {
   flex-direction: row;
 }
 
+.gridPilotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+@media screen and (max-width: 1280px) {
+  .gridPilotos {
+    grid-template-columns: 2fr 1fr;
+    gap: 0em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .gridPilotos {
+    grid-template-columns: 2fr;
+    gap: 0em;
+  }
+  .gridPilotos .pilotos {
+    width: 150px;
+    height: 150px;
+  }
+  .gridPilotos .flexPilotos {
+    width: 390px;
+    height: 300px;
+  }
+}
+
 /*GRID PILOTOS */
-/*GRID PILOTOS */
+/*GRID PILOTOS 
+
+
+
 .equipoUno {
-  grid-area: equipoUno;
+    grid-area: equipoUno;
+
 }
 
 .equipoDos {
-  grid-area: equipoDos;
+    grid-area: equipoDos;
+
 }
 
 .equipoTres {
-  grid-area: equipoTres;
+    grid-area: equipoTres;
+
 }
 
 .equipoCuatro {
-  grid-area: equipoCuatro;
+    grid-area: equipoCuatro;
+
 }
 
 .equipoCinco {
-  grid-area: equipoCinco;
+    grid-area: equipoCinco;
+
 }
 
 .equipoSeis {
-  grid-area: equipoSeis;
+    grid-area: equipoSeis;
+
 }
 
 .equipoSiete {
-  grid-area: equipoSiete;
+    grid-area: equipoSiete;
+
 }
 
 .equipoOcho {
-  grid-area: equipoOcho;
+    grid-area: equipoOcho;
+
 }
 
 .equipoNueve {
-  grid-area: equipoNueve;
+    grid-area: equipoNueve;
+
 }
 
 .equipoDiez {
-  grid-area: equipoDiez;
+    grid-area: equipoDiez;
+
 }
 
-/*MEDIA HTML PILOTOS*/
+/*MEDIA HTML PILOTOS
+
 .gridPilotos {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: auto;
-  grid-template-areas: "equipoUno" "equipoDos" "equipoTres" "equipoCuatro" "equipoCinco" "equipoSeis" "equipoSiete" "equipoOcho" "equipoNueve" "equipoDiez";
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "equipoUno"
+        "equipoDos"
+        "equipoTres"
+        "equipoCuatro"
+        "equipoCinco"
+        "equipoSeis"
+        "equipoSiete"
+        "equipoOcho"
+        "equipoNueve"
+        "equipoDiez";
 }
 
-@media screen and (min-width: 768px) {
-  .gridPilotos {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    grid-template-areas: " equipoUno      equipoDos      equipoTres  " " equipoCuatro   equipoCinco    equipoSeis" " equipoSiete    equipoOcho     equipoNueve" " equipoDiez     auto           auto";
-  }
+@media screen and (min-width:768px) {
+
+    .gridPilotos {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        grid-template-areas:
+            " equipoUno      equipoDos      equipoTres  "
+            " equipoCuatro   equipoCinco    equipoSeis"
+            " equipoSiete    equipoOcho     equipoNueve"
+            " equipoDiez     auto           auto"
+        ;
+
+    }
 }
+*/
 
 /*# sourceMappingURL=style.css.map */
