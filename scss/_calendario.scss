@@ -1,8 +1,23 @@
 @media screen and (max-width:750px) {
-    
-
-    .container{
-        justify-content: center;
+    .card{
+        width: 23rem;
+        
     }
+}
 
+@media screen and (max-width:980px) {
+    .card{
+        width: 20rem;
+        
+    }
+}
+@media screen and (max-width:1400px) {
+    .card{
+        width: 20rem;
+        
+    }
+}
+.card{
+    width: 20rem;
+    
 }
