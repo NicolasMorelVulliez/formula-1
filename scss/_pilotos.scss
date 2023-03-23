@@ -63,13 +63,54 @@ figure {
     grid-template-columns:repeat($columnas,1fr) ;
     gap: $espacio;
     
-    @media screen and (max-width:1280px) {
-        grid-template-columns: 2fr 1fr ;
+    @media screen and (max-width:1440px) {
+        grid-template-columns: 500px 500px ;
         gap: 0em;
+
+        .gridPilotos{
+            justify-content: center;
+        }
     }
 
-    @media screen and (max-width:900px) {
-        grid-template-columns: 2fr ;
+    @media screen and (max-width:1000px) {
+        grid-template-columns: 450px 450px ;
+        gap: 0em;
+
+        .pilotos {
+            width: 175px;
+            height: 175px;
+        }
+        .flexPilotos{
+            width: 400px;
+            height: 350px;
+
+        }
+        .gridPilotos{
+            justify-content: center;
+        }
+
+    }
+    @media screen and (max-width:940px) {
+        grid-template-columns: 2fr 2fr ;
+        gap: 0em;
+
+        .pilotos {
+            width: 175px;
+            height: 175px;
+        }
+        .flexPilotos{
+            width: 400px;
+            height: 350px;
+        }
+
+        .gridPilotos{
+            justify-content: center;
+        }
+
+
+    }
+    @media screen and (max-width:850px) {
+        grid-template-columns: 1fr 1fr ;
         gap: 0em;
 
         .pilotos {
@@ -77,12 +118,57 @@ figure {
             height: 150px;
         }
         .flexPilotos{
-            width: 390px;
+            width: 350px;
             height: 300px;
-
         }
 
+        .gridPilotos{
+            justify-content: center;
+        }
+
+
     }
+    @media screen and (max-width:740px) {
+        grid-template-columns: auto ;
+        gap: 0em;
+
+        .pilotos {
+            width: 175px;
+            height: 175px;
+        }
+        .flexPilotos{
+            width: 500px;
+            height: 400px;
+        }
+
+        .gridPilotos{
+            justify-content: center;
+        }
+        
+
+    }
+    @media screen and (max-width:530px) {
+        grid-template-columns: auto ;
+        gap: 0em;
+
+        .pilotos {
+            width: 125px;
+            height: 125px;
+        }
+        .flexPilotos{
+            width: 340px;
+            height: 300px;
+        }
+        .nombrePiloto{
+            font-size: medium;
+        }
+        .gridPilotos{
+            justify-content: center;
+        }
+        
+
+    }
+
 }
 .gridPilotos{
     @include grid(3,1em )

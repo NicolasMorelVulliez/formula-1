@@ -159,15 +159,52 @@ figure .pilotos {
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .gridPilotos {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 500px 500px;
     gap: 0em;
   }
+  .gridPilotos .gridPilotos {
+    justify-content: center;
+  }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .gridPilotos {
-    grid-template-columns: 2fr;
+    grid-template-columns: 450px 450px;
+    gap: 0em;
+  }
+  .gridPilotos .pilotos {
+    width: 175px;
+    height: 175px;
+  }
+  .gridPilotos .flexPilotos {
+    width: 400px;
+    height: 350px;
+  }
+  .gridPilotos .gridPilotos {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 940px) {
+  .gridPilotos {
+    grid-template-columns: 2fr 2fr;
+    gap: 0em;
+  }
+  .gridPilotos .pilotos {
+    width: 175px;
+    height: 175px;
+  }
+  .gridPilotos .flexPilotos {
+    width: 400px;
+    height: 350px;
+  }
+  .gridPilotos .gridPilotos {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gridPilotos {
+    grid-template-columns: 1fr 1fr;
     gap: 0em;
   }
   .gridPilotos .pilotos {
@@ -175,8 +212,84 @@ figure .pilotos {
     height: 150px;
   }
   .gridPilotos .flexPilotos {
-    width: 390px;
+    width: 350px;
     height: 300px;
+  }
+  .gridPilotos .gridPilotos {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 740px) {
+  .gridPilotos {
+    grid-template-columns: auto;
+    gap: 0em;
+  }
+  .gridPilotos .pilotos {
+    width: 175px;
+    height: 175px;
+  }
+  .gridPilotos .flexPilotos {
+    width: 500px;
+    height: 400px;
+  }
+  .gridPilotos .gridPilotos {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 530px) {
+  .gridPilotos {
+    grid-template-columns: auto;
+    gap: 0em;
+  }
+  .gridPilotos .pilotos {
+    width: 125px;
+    height: 125px;
+  }
+  .gridPilotos .flexPilotos {
+    width: 340px;
+    height: 300px;
+  }
+  .gridPilotos .nombrePiloto {
+    font-size: medium;
+  }
+  .gridPilotos .gridPilotos {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    justify-content: center;
+  }
+}
+.col-noticias {
+  width: 400px;
+  height: 700px;
+}
+
+.noticiasFormula {
+  border-top: red 2px solid;
+  border-left: red 2px solid;
+  border-right: red 2px solid;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .col-noticias {
+    width: 500px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .col-noticias {
+    width: 600px;
+    margin-bottom: 10px;
+  }
+  .noticiasFormula {
+    border-top: red 3px solid;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
   }
 }
 

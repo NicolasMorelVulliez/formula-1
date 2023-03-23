@@ -1,0 +1,31 @@
+.col-noticias{
+    width: 400px;
+    height: 700px;
+}
+.noticiasFormula{
+    border-top: red 2px solid ;
+    border-left: red 2px solid;
+    border-right: red 2px solid;
+    border-radius: 5px;
+}
+@media screen and (max-width:1400px) {
+    .col-noticias{
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .col-noticias{
+        width: 600px;
+        margin-bottom: 10px;
+    }
+    .noticiasFormula{
+        border-top: red 3px solid ;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+    }
+}
+
+
